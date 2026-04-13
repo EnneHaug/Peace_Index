@@ -27,8 +27,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Each dimension shows a description/prompt explaining what it measures before the user scores it
   3. After completing all 5 dimensions, user sees a summary view showing all 5 scores at once
   4. Assessment results persist in IndexedDB and remain available after closing and reopening the browser
-**Plans**: TBD
-**UI hint**: yes
+**Plans**: 4 plans
+Plans:
+- [ ] 01-01-PLAN.md — Project scaffolding: Vite + React + TypeScript + Tailwind v4 + shadcn@canary init + all Phase 1 dependencies
+- [ ] 01-02-PLAN.md — Data foundation: dimensions config (5 Ps) + Dexie schema + AssessmentRecord type + saveAssessment()
+- [ ] 01-03-PLAN.md — Assessment wizard: step-by-step screen with slider, numeric readout, progress indicator, back navigation
+- [ ] 01-04-PLAN.md — Summary screen + App wiring + human verification of full end-to-end flow
 
 ### Phase 2: History & Trends
 **Goal**: Users can review their assessment history and see how their scores have changed over time
@@ -58,6 +62,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Assessment | 0/TBD | Not started | - |
+| 1. Assessment | 0/4 | Not started | - |
 | 2. History & Trends | 0/TBD | Not started | - |
 | 3. PWA & Polish | 0/TBD | Not started | - |
