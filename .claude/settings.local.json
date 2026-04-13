@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(find .:*)",
+      "WebSearch",
+      "WebFetch(domain:www.uxstudioteam.com)",
+      "WebFetch(domain:web.dev)",
+      "WebFetch(domain:blog.logrocket.com)",
+      "Skill(gsd-discuss-phase)",
+      "Skill(gsd-plan-phase)",
+      "Skill(gsd-ui-phase)",
+      "Skill(gsd-execute-phase)"
+    ]
+  }
+}
