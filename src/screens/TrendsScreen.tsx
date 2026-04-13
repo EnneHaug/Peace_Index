@@ -74,11 +74,12 @@ export function TrendsScreen() {
         Score Trends
       </h2>
 
-      {/* Pitfall 2: height={300} on ResponsiveContainer prevents zero-height collapse */}
-      <ResponsiveContainer width="100%" height={300}>
+      {/* height={260} prevents zero-height collapse; overflow-hidden prevents clip on 375px screens */}
+      <div className="overflow-hidden">
+      <ResponsiveContainer width="100%" height={260}>
         <LineChart
           data={chartData}
-          margin={{ top: 8, right: 8, bottom: 8, left: 0 }}
+          margin={{ top: 8, right: 16, bottom: 0, left: -16 }}
         >
           <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
           <XAxis
@@ -112,6 +113,7 @@ export function TrendsScreen() {
           ))}
         </LineChart>
       </ResponsiveContainer>
+      </div>
 
       {/* Single-assessment hint */}
       {records.length === 1 && (

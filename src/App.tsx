@@ -74,7 +74,9 @@ export default function App() {
 
       {/* Tab content — pb-16 prevents content hiding behind fixed tab bar */}
       <main className="flex-1 flex flex-col overflow-y-auto pb-16">
-        {renderTabContent()}
+        <div className="w-full max-w-2xl mx-auto flex-1 flex flex-col">
+          {renderTabContent()}
+        </div>
       </main>
 
       {/* Bottom tab bar — fixed, 64px tall */}
@@ -83,7 +85,7 @@ export default function App() {
           <button
             key={id}
             onClick={() => setActiveTab(id)}
-            className={`flex-1 flex flex-col items-center justify-center gap-1 text-xs font-medium transition-colors duration-150 ${
+            className={`flex-1 flex flex-col items-center justify-center gap-1 text-xs font-medium transition-colors duration-150 min-h-[44px] touch-manipulation ${
               activeTab === id ? 'text-blue-500' : 'text-slate-400'
             }`}
             aria-current={activeTab === id ? 'page' : undefined}
