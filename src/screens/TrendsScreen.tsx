@@ -93,8 +93,8 @@ export function TrendsScreen() {
             width={36}
           />
           <Tooltip
-            formatter={(value: number, name: string) => [`${value}%`, name]}
-            labelFormatter={(iso: string) => format(new Date(iso), 'MMMM d, yyyy')}
+            formatter={(value, name) => [`${value}%`, name]}
+            labelFormatter={(iso) => typeof iso === 'string' ? format(new Date(iso), 'MMMM d, yyyy') : String(iso)}
           />
           <Legend />
           {DIMENSIONS.map(dim => (
