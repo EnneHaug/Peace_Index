@@ -14,7 +14,7 @@ type ScoreMap = Omit<AssessmentRecord, 'id' | 'schemaVersion' | 'date'>;
  * Always writes schemaVersion: 1 (D-10) and ISO 8601 UTC date (D-11).
  * @returns The auto-assigned id of the new record.
  */
-export async function saveAssessment(scores: ScoreMap): Promise<number> {
+export async function saveAssessment(scores: ScoreMap): Promise<number | undefined> {
   return db.assessments.add({
     schemaVersion: 1,
     date: new Date().toISOString(),  // D-11: UTC ISO string — sortable, locale-independent
