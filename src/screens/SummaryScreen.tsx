@@ -44,6 +44,10 @@ export function SummaryScreen({ onNewAssessment }: SummaryScreenProps) {
 
   const formattedDate = format(new Date(latest.date), 'MMMM d, yyyy');
 
+  const peaceIndex = Math.round(
+    DIMENSIONS.reduce((sum, d) => sum + (latest[d.key as keyof typeof latest] as number), 0) / DIMENSIONS.length
+  );
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       {/* App bar */}
@@ -57,12 +61,12 @@ export function SummaryScreen({ onNewAssessment }: SummaryScreenProps) {
       <main className="flex-1 flex flex-col items-center px-8 pt-8 pb-12">
         <div className="w-full max-w-[560px] flex flex-col gap-6">
 
-          {/* Summary heading — D-07 */}
-          <div className="flex flex-col gap-1">
-            <h1 className="text-[28px] font-semibold text-slate-900 leading-[1.2]">
-              Your Peace Index
-            </h1>
-            {/* Date — UI-SPEC Label 14px/400, text-secondary */}
+          {/* Peace Index score — the headline number */}
+          <div className="flex flex-col items-center gap-2 py-6">
+            <p className="text-sm text-slate-500 uppercase tracking-wide">Your Peace Index</p>
+            <p className="text-[64px] font-semibold text-blue-500 leading-none">
+              {peaceIndex}%
+            </p>
             <p className="text-sm text-slate-500">
               Scored on {formattedDate}
             </p>
