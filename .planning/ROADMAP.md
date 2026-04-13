@@ -13,7 +13,7 @@ Build a PWA that lets users take the Peace Index assessment, see their scores, t
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [ ] **Phase 1: Assessment** - User can take and complete a Peace Index assessment with scores saved locally
-- [ ] **Phase 2: History & Trends** - User can view past assessments and score trend charts
+- [x] **Phase 2: History & Trends** - User can view past assessments and score trend charts (completed 2026-04-13)
 - [ ] **Phase 3: PWA & Polish** - App is installable, works offline, and is responsive on all devices
 
 ## Phase Details
@@ -40,9 +40,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Install Recharts and refactor App.tsx to three-tab bottom navigation
-- [ ] 02-02-PLAN.md — Build HistoryScreen with card list, expand/collapse, and empty state
-- [ ] 02-03-PLAN.md — Build TrendsScreen with Recharts multi-line trend chart
+- [x] 02-01-PLAN.md — Install Recharts and refactor App.tsx to three-tab bottom navigation
+- [x] 02-02-PLAN.md — Build HistoryScreen with card list, expand/collapse, and empty state
+- [x] 02-03-PLAN.md — Build TrendsScreen with Recharts multi-line trend chart
 
 ### Phase 3: PWA & Polish
 **Goal**: The app is a fully installable, offline-capable PWA that works on any screen size
@@ -63,5 +63,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Assessment | 0/TBD | Not started | - |
-| 2. History & Trends | 0/3 | Not started | - |
+| 2. History & Trends | 3/3 | Complete    | 2026-04-13 |
 | 3. PWA & Polish | 0/TBD | Not started | - |
