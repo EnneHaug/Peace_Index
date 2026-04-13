@@ -37,8 +37,12 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Success Criteria** (what must be TRUE):
   1. User can view a list of all past assessments ordered newest first, each showing its date
   2. User can view a chart for each dimension showing its score trend across all past assessments
-**Plans**: TBD
-**UI hint**: yes
+**Plans**: 3 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Install Recharts and refactor App.tsx to three-tab bottom navigation
+- [ ] 02-02-PLAN.md — Build HistoryScreen with card list, expand/collapse, and empty state
+- [ ] 02-03-PLAN.md — Build TrendsScreen with Recharts multi-line trend chart
 
 ### Phase 3: PWA & Polish
 **Goal**: The app is a fully installable, offline-capable PWA that works on any screen size
@@ -59,5 +63,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Assessment | 0/TBD | Not started | - |
-| 2. History & Trends | 0/TBD | Not started | - |
+| 2. History & Trends | 0/3 | Not started | - |
 | 3. PWA & Polish | 0/TBD | Not started | - |
