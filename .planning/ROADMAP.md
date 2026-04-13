@@ -52,8 +52,10 @@ Plans:
   1. User is prompted to install the app on mobile and desktop and it launches from the home screen/taskbar
   2. User can take an assessment and view history with no internet connection after the first load
   3. The app layout is usable and visually correct on mobile phones, tablets, and desktop browsers
-**Plans**: TBD
-**UI hint**: yes
+**Plans**: 1 plan
+
+Plans:
+- [ ] 03-01-PLAN.md — Install vite-plugin-pwa, configure manifest + service worker, generate icons, fix responsive layout
 
 ## Progress
 
@@ -64,4 +66,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|----------------|--------|-----------|
 | 1. Assessment | 0/TBD | Not started | - |
 | 2. History & Trends | 3/3 | Complete    | 2026-04-13 |
-| 3. PWA & Polish | 0/TBD | Not started | - |
+| 3. PWA & Polish | 0/1 | Not started | - |
