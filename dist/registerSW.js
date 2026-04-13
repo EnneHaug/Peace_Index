@@ -1,1 +1,0 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/Peace_Index/sw.js', { scope: '/Peace_Index/' })})}
