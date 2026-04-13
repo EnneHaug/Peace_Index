@@ -10,7 +10,28 @@
       "Skill(gsd-discuss-phase)",
       "Skill(gsd-plan-phase)",
       "Skill(gsd-ui-phase)",
-      "Skill(gsd-execute-phase)"
+      "Skill(gsd-execute-phase)",
+      "Bash(npm run:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)",
+      "Bash(gh run:*)",
+      "WebFetch(domain:recharts.org)",
+      "WebFetch(domain:recharts.github.io)",
+      "Bash(git stash:*)",
+      "Bash(git merge:*)",
+      "Bash(git checkout:*)",
+      "Bash(git worktree:*)",
+      "Bash(git branch:*)",
+      "Bash(npm show:*)",
+      "Bash(npm info:*)",
+      "Bash(npm install:*)",
+      "Bash(git commit --no-verify -m 'feat\\(03-01\\): install vite-plugin-pwa and configure manifest + service worker:*)",
+      "Bash(git commit --no-verify -m 'feat\\(03-01\\): generate PWA icons 192x192 and 512x512:*)",
+      "Bash(git commit --no-verify -m 'feat\\(03-01\\): responsive layout audit and touch-target fixes:*)",
+      "Bash(git -C /c/Users/Admin/Documents/Repos/Peace_Index/.claude/worktrees/agent-a4a39e80 log --oneline)",
+      "Bash(git -C /c/Users/Admin/Documents/Repos/Peace_Index add .planning/phases/03-pwa-polish/03-01-SUMMARY.md)",
+      "Bash(git -C /c/Users/Admin/Documents/Repos/Peace_Index commit --no-verify -m 'docs\\(03-01\\): complete PWA polish plan summary:*)"
     ]
   }
 }
